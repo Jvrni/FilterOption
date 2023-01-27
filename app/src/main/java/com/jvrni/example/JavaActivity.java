@@ -12,12 +12,10 @@ import kotlin.Unit;
 
 public class JavaActivity extends AppCompatActivity {
 
-    ActivityMainBinding binding;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         ArrayList<FilterEntity> list = new ArrayList<>();
