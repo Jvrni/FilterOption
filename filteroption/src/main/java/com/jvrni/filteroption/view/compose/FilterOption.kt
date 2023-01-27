@@ -54,7 +54,8 @@ fun FilterOption(
     LazyRow(
         modifier = modifier,
         contentPadding = PaddingValues(10.dp, 0.dp),
-        horizontalArrangement = Arrangement.spacedBy(if (isSelected) 0.dp else 6.dp)
+        horizontalArrangement = Arrangement.spacedBy(if (isSelected) 0.dp else 6.dp),
+        verticalAlignment = Alignment.CenterVertically
     ) {
         itemsIndexed(items = list.value) { index, item ->
 
