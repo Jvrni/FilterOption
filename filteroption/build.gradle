@@ -5,9 +5,9 @@ plugins {
 }
 
 ext {
-    PUBLISH_GROUP_ID = 'com.jvrni'
+    PUBLISH_GROUP_ID = 'io.github.jvrni'
     PUBLISH_VERSION = '0.0.1'
-    PUBLISH_ARTIFACT_ID = 'filter-option'
+    PUBLISH_ARTIFACT_ID = 'filteroption'
 }
 
 apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
