@@ -64,7 +64,7 @@ afterEvaluate {
                     // Version control info - if you're using GitHub, follow the
                     // format as seen here
                     scm {
-                        connection = 'scm:git:github.com/getstream/Jvrni/FilterOption'
+                        connection = 'scm:git:github.com/Jvrni/FilterOption'
                         developerConnection = 'scm:git:ssh://github.com/Jvrni/FilterOption.git'
                         url = 'https://github.com/Jvrni/FilterOption/tree/main'
                     }
