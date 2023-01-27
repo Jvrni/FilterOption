@@ -7,11 +7,11 @@ plugins {
 
 android {
     namespace 'com.jvrni.filteroption'
-    compileSdk 33
+    compileSdk 32
 
     defaultConfig {
         minSdk 24
-        targetSdk 33
+        targetSdk 32
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -69,7 +69,7 @@ afterEvaluate {
 
                 groupId = 'com.github.jvrni'
                 artifactId = 'filter-option'
-                version = '0.0.1'
+                version = '0.0.2'
             }
         }
     }
