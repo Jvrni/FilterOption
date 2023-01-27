@@ -2,8 +2,15 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android'
-    id 'maven-publish'
 }
+
+ext {
+    PUBLISH_GROUP_ID = 'com.jvrni'
+    PUBLISH_VERSION = '0.0.1'
+    PUBLISH_ARTIFACT_ID = 'filter-option'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
 
 android {
     namespace 'com.jvrni.filteroption'
@@ -68,16 +75,16 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'com.github.jvrni'
-                artifactId = 'filter-option'
-                version = '0.0.2'
-            }
-        }
-    }
-}
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                from components.release
+//
+//                groupId = 'com.github.jvrni'
+//                artifactId = 'filter-option'
+//                version = '0.0.2'
+//            }
+//        }
+//    }
+//}
