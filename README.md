@@ -148,7 +148,9 @@ public class JavaActivity extends AppCompatActivity {
 
 ## License
 ```
-Copyright (c) 2023 Jvrni
+MIT License
+
+Copyright (c) 2023 João Varani
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
